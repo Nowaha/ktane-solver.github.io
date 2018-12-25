@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wires - KTANE Solver</title>
+
+    <script src="/materialize/js/materialize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/materialize/css/materialize.css">
+
+    <link href="css/wires.css" rel="stylesheet">
+    <script src="/scripts/wires.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col light-blue darken-1">
+                <a href="/" class="breadcrumb">Home page</a>
+                <a href="#" class="breadcrumb">Wires</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h4>Wires</h4>
+        <h5>Last serial number digit</h5>
+        <p>
+        <label>
+            <input id="lastodd" type="checkbox" class="filled-in"/>
+            <span>Last digit of serial number is odd</span>
+        </label>
+        </p>
+        <h5>Wire count</h5>
+        <input id="wirecount" type="number" min="3" max="6" value="3">
+        <h5>Wire colors</h5>
+        <table>
+            <tr id="wirecontainer">
+            </tr>
+        </table>
+        <br>
+        <button class="waves-effect waves-light btn-small green" type="submit" id="submit">Submit</button>
+        <div id="resultContainer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Who's on First - KTANE Solver</title>
+
+    <!-- MaterializeCSS -->
+    <link rel="stylesheet" href="/materialize/css/materialize.css">
+    <script src="/materialize/js/materialize.js"></script>
+    <!-- MaterializeCSS end -->
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fonts end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/scripts/wof.js"></script>
+    <link rel="stylesheet" href="css/wof.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col light-blue darken-1">
+                <a href="/" class="breadcrumb">Home page</a>
+                <a href="#" class="breadcrumb">Who's on First</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4>Who's on First</h4>
+        <div class="stage1">
+            <h5>Text on display</h5>
+            <select id="textondisplay">
+                <option value="DISPLAYEMPTY" selected>Display is empty</option>
+                <option value="BLANK">BLANK</option>
+                <option value="C">C</option>
+                <option value="CEE">CEE</option>
+                <option value="DISPLAY">DISPLAY</option>
+                <option value="FIRST">FIRST</option>
+                <option value="HOLD ON">HOLD ON</option>
+                <option value="LEAD">LEAD</option>
+                <option value="LED">LED</option>
+                <option value="LEED">LEED</option>
+                <option value="NO">NO</option>
+                <option value="NOTHING">NOTHING</option>
+                <option value="OKAY">OKAY</option>
+                <option value="READ">READ</option>
+                <option value="RED">RED</option>
+                <option value="REED">REED</option>
+                <option value="SAYS">SAYS</option>
+                <option value="SEE">SEE</option>
+                <option value="THEIR">THEIR</option>
+                <option value="THERE">THERE</option>
+                <option value="THEY ARE">THEY ARE</option>
+                <option value="THEY'RE">THEY'RE</option>
+                <option value="UR">UR</option>
+                <option value="YES">YES</option>
+                <option value="YOU">YOU</option>
+                <option value="YOU ARE">YOU ARE</option>
+                <option value="YOU'RE">YOU'RE</option>
+                <option value="YOUR">YOUR</option>  
+            </select>
+            <br>
+            <button class="waves-effect waves-light btn green" id="continue1">Continue</button>
+        </div><br>
+        <div class="stage2">
+            <h5>Text at spot</h5>
+            <h6>Ask for the word at the following spot:</h6>
+            <br>
+            <table>
+                <tr>
+                    <td class="top-left">&nbsp;&nbsp;</td>
+                    <td class="top-right">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="mid-left">&nbsp;&nbsp;</td>
+                    <td class="mid-right">&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="bottom-left">&nbsp;&nbsp;</td>
+                    <td class="bottom-right">&nbsp;&nbsp;</td>
+                </tr>
+            </table>
+            <br>
+            <select id="labelonbutton">
+                <option value="BLANK" selected>BLANK</option>
+                <option value="DONE">DONE</option>
+                <option value="FIRST">FIRST</option>
+                <option value="HOLD">HOLD</option>
+                <option value="LEFT">LEFT</option>
+                <option value="LIKE">LIKE</option>
+                <option value="MIDDLE">MIDDLE</option>
+                <option value="NEXT">NEXT</option>
+                <option value="NO">NO</option>
+                <option value="NOTHING">NOTHING</option>
+                <option value="OKAY">OKAY</option>
+                <option value="PRESS">PRESS</option>
+                <option value="READY">READY</option>
+                <option value="RIGHT">RIGHT</option>
+                <option value="SURE">SURE</option>
+                <option value="U">U</option>
+                <option value="UH HUH">UH HUH</option>
+                <option value="UH UH">UH UH</option>
+                <option value="UHHH">UHHH</option>
+                <option value="UR">UR</option>
+                <option value="WAIT">WAIT</option>
+                <option value="WHAT">WHAT</option>
+                <option value="WHAT?">WHAT?</option>
+                <option value="YES">YES</option>
+                <option value="YOU ARE">YOU ARE</option>
+                <option value="YOU">YOU</option>
+                <option value="YOU'RE">YOU'RE</option>
+                <option value="YOUR">YOUR</option>
+                
+            </select>
+            <br>
+            <button class="waves-effect waves-light btn light-blue" id="continue2">Continue</button>
+        </div> 
+        <div class="stage3">
+            <h5>Results:</h5>
+            <h6>Push the first button that appears in the following list:</h6>
+            <p><b></b></p>
+            <a href="/pages/who's on first.html"><button class="red btn">Reset</button></a>
+        </div>
+    </div>
+</body>
+</html>

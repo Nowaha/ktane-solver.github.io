@@ -1,0 +1,27 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.select-wrapper {
+    width: 250px !important;
+}
+
+table {
+    width: 100px;
+    border: 2px solid black;
+    padding: 0;
+}
+
+td {
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+}

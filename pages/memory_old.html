@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Memory - KTANE Solver</title>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="/materialize/css/materialize.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="css/memory.css"/>
+
+      <script src="/materialize/js/materialize.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../scripts/memory.js"></script>
+  </head>
+  <body>
+      <nav>
+          <div class="nav-wrapper">
+              <div class="col light-blue darken-1">
+                  <a href="/" class="breadcrumb">Home page</a>
+                  <a href="#" class="breadcrumb">Memory</a>
+              </div>
+          </div>
+      </nav>
+
+      <div class="container">
+        <h4>Stage 1</h4>
+        <table>
+          <tr>
+            <th>Stage</th>
+            <th>Display</th>
+            <th>Outcome</th>
+          </tr>
+          <tr>
+            <td>
+              <h4>1</h4>
+            </td>
+            <td>
+              <form>
+                <label>
+                  <input class="with-gap stage1" name="number1" type="radio" value="1"/>
+                  <span>1</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage1" name="number1" type="radio" value="2"/>
+                  <span>2</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage1" name="number1" type="radio" value="3"/>
+                  <span>3</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage1" name="number1" type="radio" value="4"/>
+                  <span>4</span>
+                </label>
+              </form>
+            </td>
+            <td>
+              <input type="text" id="output1" readonly>
+              <div>
+                <p id="input3text">The number on that button:</p><input type="number" id="input3input" min="1" max="4"><button class="waves-effect waves-light btn-small btn" type="submit" id="input3confirm">Confirm</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>2</h4>
+            </td>
+            <td>
+              <form>
+                <label>
+                  <input class="with-gap stage2" name="number2" type="radio" value="1"/>
+                  <span>1</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage2" name="number2" type="radio" value="2"/>
+                  <span>2</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage2" name="number2" type="radio" value="3"/>
+                  <span>3</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage2" name="number2" type="radio" value="4"/>
+                  <span>4</span>
+                </label>
+              </form>
+            </td>
+            <td>
+              <input type="text" id="output2" readonly>
+              <div>
+                <p id="input2text">Please input the position that is in:</p><input type="number" id="input2input" min="1" max="4"><button class="waves-effect waves-light btn-small btn" type="submit" id="input2confirm">Confirm</button>
+              </div>
+              <div>
+                <p id="input6text">The number on that button:</p><input type="number" id="input6input" min="1" max="4"><button class="waves-effect waves-light btn-small btn" type="submit" id="input6confirm">Confirm</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>3</h4>
+            </td>
+            <td>
+              <form>
+                <label>
+                  <input class="with-gap stage3" name="number3" type="radio" value="1"/>
+                  <span>1</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage3" name="number3" type="radio" value="2"/>
+                  <span>2</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage3" name="number3" type="radio" value="3"/>
+                  <span>3</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage3" name="number3" type="radio" value="4"/>
+                  <span>4</span>
+                </label>
+              </form>
+            </td>
+            <td>
+              <input type="text" id="output3" readonly>
+              <div>
+                <p id="input4text">The number on that button:</p><input type="number" id="input4input" min="1" max="4"><button class="waves-effect waves-light btn-small btn" type="submit" id="input4confirm">Confirm</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>4</h4>
+            </td>
+            <td>
+              <form>
+                <label>
+                  <input class="with-gap stage4" name="number4" type="radio" value="1"/>
+                  <span>1</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage4" name="number4" type="radio" value="2"/>
+                  <span>2</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage4" name="number4" type="radio" value="3"/>
+                  <span>3</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage4" name="number4" type="radio" value="4"/>
+                  <span>4</span>
+                </label>
+              </form>
+            </td>
+            <td>
+              <input type="text" id="output4" readonly>
+              <div>
+                <p id="input5text">The number on that button:</p><input type="number" id="input5input" min="1" max="4"><button class="waves-effect waves-light btn-small btn" type="submit" id="input5confirm">Confirm</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>5</h4>
+            </td>
+            <td>
+              <form>
+                <label>
+                  <input class="with-gap stage5" name="number5" type="radio" value="1"/>
+                  <span>1</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage5" name="number5" type="radio" value="2"/>
+                  <span>2</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage5" name="number5" type="radio" value="3"/>
+                  <span>3</span>
+                </label>
+                <br>
+                <label>
+                  <input class="with-gap stage5" name="number5" type="radio" value="4"/>
+                  <span>4</span>
+                </label>
+              </form>
+            </td>
+            <td>
+              <input type="text" id="output5" readonly>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <button type="button" class="waves-effect waves-light btn red" id="reset">Reset</button>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.continue {
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.inputs {
+  width: 465px;
+
+  display: grid;
+  grid-template-columns: 100px 10px 335px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "display . output"
+    "display . input_extra";
+}
+
+.display {
+  grid-area: display;
+}
+
+.output {
+  grid-area: output;
+  margin-right: 4px;
+}
+
+#output1, #output2, #output3, #output4, #output5 {
+  font-weight: bold;
+}
+
+.input_extra1, .input_extra2, .input_extra3, .input_extra4, .input_extra5 {
+  grid-area: input_extra;
+}
+
+.input_extra1 > p, .input_extra2 > p, .input_extra3 > p, .input_extra4 > p, .input_extra5 > p {
+  display: inline-block;
+}
+
+.input_extra1 > input, .input_extra2 > input, .input_extra3 > input, .input_extra4 > input, .input_extra5 > input {
+  display: inline-block;
+  width: 30px !important;
+  margin-left: 20px !important;
+}
+
+.disabled {
+  color: #a5a5a5;
+}

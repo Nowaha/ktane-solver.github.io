@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.input {
+  width: 75px;
+}
+
+.invalidEntry1, .invalidEntry2 {
+  color: red;
+}
+
+.container table {
+  table-layout: fixed;
+}
+
+#input2text, #input3text, #input4text, #input5text, #input6text {
+  float:left;
+}
+
+#input2input, #input3input, #input4input, #input5input, #input6input {
+  float:left;
+  margin-left: 10px;
+  width: 30px;
+}
+
+#input2confirm, #input3confirm, #input4confirm, #input5confirm, #input6confirm {
+  float:left;
+  margin: 15px 0px 15px 10px;
+}

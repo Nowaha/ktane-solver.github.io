@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.selection {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 3px;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.selection button {
+    color: white;
+    cursor: pointer;
+    background-color: #3f51b5;
+    width: 100%;
+    height: 150px;
+    border: none;
+    transition-duration: 0.1s;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.selection button:nth-child(odd) {
+    background-color: #2c387e;
+}
+
+.selection button:hover {
+    background-color: #6573c3;
+}
+
+@media (max-width: 550px) {
+    .selection {
+        grid-auto-rows: 100px;
+    }
+
+    .selection button {
+        background-color: #3f51b5;
+        height: 100px;
+    }
+
+    .selection button:nth-child(odd) {
+        background-color: #3f51b5;
+    }
+
+    .selection button:nth-child(1), .selection button:nth-child(4), .selection button:nth-child(5), .selection button:nth-child(8), .selection button:nth-child(9) {
+        background-color: #2c387e;
+    }   
+}

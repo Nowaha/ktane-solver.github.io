@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Simon Says - KTANE Solver</title>
+
+    <script src="/materialize/js/materialize.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="/materialize/css/materialize.css">
+
+    <link rel="stylesheet" type="text/css" href="css/simonsays.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/simonsays.js"></script>
+  </head>
+
+  <body>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="col light-blue darken-1">
+            <a href="/" class="breadcrumb">Home page</a>
+            <a href="#" class="breadcrumb">Simon says</a>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+      <h5>Vowels</h5>
+      <p>
+        <label>
+          <input id="hasvowels" type="checkbox" class="filled-in"/>
+          <span>Serial number has vowels</span>
+        </label>
+      </p>
+      <h5>Strike count</h5>
+      <div>
+        <form>
+          <p>
+            <label>
+              <input class="with-gap" name="strikes" type="radio" value="0" checked/>
+              <span>No strikes</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="strikes" type="radio" value="1"/>
+              <span>1 strike</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="strikes" type="radio" value="2"/>
+              <span>2 strikes</span>
+            </label>
+          </p>
+        </form>
+      </div>
+
+      <div>
+        <h5>Color</h5>
+        <form>
+          <p>
+            <label>
+              <input class="with-gap" name="color" type="radio" value="red" checked/>
+              <span>Red</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="color" type="radio" value="green"/>
+              <span>Green</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="color" type="radio" value="blue"/>
+              <span>Blue</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="with-gap" name="color" type="radio" value="yellow"/>
+              <span>Yellow</span>
+            </label>
+          </p>
+        </form>
+      </div>
+      <br>
+      <button class="waves-effect waves-light btn green" type="submit" id="submit">Submit</button>
+      &nbsp;
+      <button class="waves-effect waves-light btn red" type="submit" id="clear">Clear output</button>
+      <div id="output">
+      </div>
+  </div>
+  </body>
+</html>

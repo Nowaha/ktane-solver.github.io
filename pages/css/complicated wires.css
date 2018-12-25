@@ -1,0 +1,55 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 0;
+  width: 100%;
+}
+
+#amount {
+  width: 30px;
+}
+
+table {
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td {
+  padding-right: 50px;
+}
+
+table .absorbing-column {
+    width: 100%;
+}
+
+.customHeader {
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+
+.customParagraph {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.customBreak {
+  outline: 1px gray;
+}
+
+#output1, #output2, #output3, #output4, #output5, #output6 {
+  width: 75px;
+}
+
+.outputBold {
+  font-weight: bold;
+}
+
+.outputDiv {
+  margin: 0px;
+}

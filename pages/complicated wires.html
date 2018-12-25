@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Complicated wires - KTANE Solver</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/complicated wires.css"/>
+
+    <script src="/materialize/js/materialize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/complicated wires.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col light-blue darken-1">
+                <a href="/" class="breadcrumb">Home page</a>
+                <a href="#" class="breadcrumb">Complicated wires</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div class="stage1">
+        <h5>Bomb properties:</h5>
+        <p>
+          <label>
+            <input id="hasParralel" type="checkbox" class="filled-in"/>
+            <span>Has parallel port</span>
+          </label>
+        </p>
+        <p>
+          <label>
+              <input id="isOdd" type="checkbox" class="filled-in"/>
+              <span>Last digit of serial number is odd</span>
+          </label>
+        </p>
+        <p>
+          <label>
+              <input id="batteries" type="checkbox" class="filled-in"/>
+              <span>Has two or more batteries</span>
+          </label>
+        </p>
+        <br>
+        <button type="submit" class="waves-effect waves-light btn" id="continue">Continue</button>
+      </div>
+      <div class="stage2">
+        <h5>Wires:</h5>
+        <input type="number" id="amount" value="1" min="1" max="6">
+        <br><br>
+        <table id="table">
+          <tr>
+            <td>
+              <h5 class="customHeader">Properties</h5>
+              <p class="customParagraph">
+                <label>
+                  <input type="checkbox" class="filled-in" id="hasLight${num}"/>
+                  <span>Has Light</span>
+                </label>
+              </p>
+              <p class="customParagraph">
+                <label>
+                  <input type="checkbox" class="filled-in" id="hasStar${num}"/>
+                  <span>Has Star</span>
+                </label>
+              </p>
+              <h5 class="customHeader">Color</h5>
+              <p class="customParagraph">
+                <label>
+                  <input class="with-gap" name="color${num}" type="radio" val="W"/>
+                  <span>White</span>
+                </label>
+              </p>
+              <p class="customParagraph">
+                <label>
+                  <input class="with-gap" name="color${num}" type="radio" val="R"/>
+                  <span>Red</span>
+                </label>
+              </p>
+              <p class="customParagraph">
+                <label>
+                  <input class="with-gap" name="color${num}" type="radio" val="RB"/>
+                  <span>Blue</span>
+                </label>
+              </p>
+              <p class="customParagraph">
+                <label>
+                  <input class="with-gap" name="color${num}" type="radio" val="RW"/>
+                  <span>Red-Blue</span>
+                </label>
+              </p>
+              <p class="customParagraph">
+                <label>
+                  <input class="with-gap" name="color${num}" type="radio" val="BW"/>
+                  <span>Red-White</span>
+                </label>
+              </p>
+              <p class="customParagraph">
+                <label>
+                  <input class="with-gap" name="color${num}" type="radio"  />
+                  <span>Blue-White</span>
+                </label>
+              </p>
+              <h5 class="customHeader">Output:</h5>
+              <div class="input-field col s6 outputDiv">
+                <input id="output${num}" class="outputText" type="text" placeholder="Output" readonly/>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <button type="button" class="waves-effect waves-light btn red" id="reset">Reset</button>
+      </div>
+    </div>
+</body>
+</html>

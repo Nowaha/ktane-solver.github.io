@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Button - KTANE Solver</title>
+
+      <script src="/materialize/js/materialize.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+      <link rel="stylesheet" href="/materialize/css/materialize.css">
+      <link rel="stylesheet" href="css/button.css">
+
+      <script type="text/javascript" src="../scripts/button.js"></script>
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <div class="col light-blue darken-1">
+               <a href="/" class="breadcrumb">Home page</a>
+               <a href="#" class="breadcrumb">Button</a>
+            </div>
+         </div>
+      </nav>
+      <div class="container">
+        <div class="stage1">
+            <h4>Stage 1</h4>
+            <h5>Button color</h5>
+            <label>
+                <input class="with-gap" name="color" type="radio" value="red" checked/>
+                <span>Red</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="color" type="radio" value="white"/>
+                <span>White</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="color" type="radio" value="blue"/>
+                <span>Blue</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="color" type="radio" value="yellow"/>
+                <span>Yellow</span>
+            </label><br>
+            <h5>Button label</h5>
+            <label>
+                <input class="with-gap" name="text" type="radio" value="abort" checked/>
+                <span>Abort</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="text" type="radio" value="detonate"/>
+                <span>Detonate</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="text" type="radio" value="hold"/>
+                <span>Hold</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="text" type="radio" value="other"/>
+                <span>Other</span>
+            </label><br>
+            <h5>Lit indicator(s)</h5>
+            <label>
+                <input class="filled-in" name="CAR" type="checkbox" value="CAR"/>
+                <span>CAR</span>
+            </label><br>
+            <label>
+                <input class="filled-in" name="FRK" type="checkbox" value="FRK"/>
+                <span>FRK</span>
+            </label><br>
+            <h5>Number of batteries</h5>
+            <label>
+                <input class="with-gap" name="batteries" type="radio" value="0" checked/>
+                <span>0&nbsp;</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="batteries" type="radio" value="1"/>
+                <span>1</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="batteries" type="radio" value="2"/>
+                <span>2</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="batteries" type="radio" value="3"/>
+                <span>3+</span>
+            </label><br><br>
+    
+            <button class="waves-effect waves-light btn light-blue" id="submit1">Solution / Stage 2</button>
+        </div>
+        <div class="stage2">
+            <h4>Stage 2</h4>
+            <p><b><u>Hold down</u></b> the button and <b><u>do not release.</u></b></h6>
+            <h5>Strip color</h5>
+            <label>
+                <input class="with-gap" name="strip-color" type="radio" value="blue" checked/>
+                <span>Blue</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="strip-color" type="radio" value="yellow"/>
+                <span>Yellow</span>
+            </label><br>
+            <label>
+                <input class="with-gap" name="strip-color" type="radio" value="other"/>
+                <span>Other</span>
+            </label><br><br>
+            <button class="waves-effect waves-light btn light-blue" id="submit2">Solution</button>
+            <button class="waves-effect waves-light btn red back">Back</button>
+        </div>
+      </div>
+      <div id="result"><h4>Final solution:</h4><p>die.</p><button class="waves-effect waves-light btn light-green darken-2 back">Restart</button></div>
+   </body>
+</html>

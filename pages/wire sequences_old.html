@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wire sequences - KTANE Solver</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/materialize/css/materialize.css">
+    <link rel="stylesheet" href="css/wire sequences.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/wire sequences.js"></script>
+    <script src="/materialize/js/materialize.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col light-blue darken-1">
+                <a href="/" class="breadcrumb">Home page</a>
+                <a href="#" class="breadcrumb">Wire sequences</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <h4 id="stage">Stage 1</h4>
+      <table>
+        <tr>
+          <th>Wire</th>
+          <th>Color</th>
+          <th>Letter</th>
+          <th>Outcome</th>
+        </tr>
+        <tr id="tr1">
+          <td>
+            <h4 class="number1">1</h4>
+            <button class="waves-effect waves-light btn orange" type="button" id="noWire1">No Wire</button>
+          </td>
+          <td>
+            <label>
+              <input class="radioNone with-gap" name="color1" type="radio" value="0" checked/>
+              <span>None</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color1" type="radio" value="0"/>
+              <span>Blue</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color1" type="radio" value="0"/>
+              <span>Black</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color1" type="radio" value="0"/>
+              <span>Red</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input class="radioNone with-gap" name="letter1" type="radio" value="0" checked/>
+              <span>None</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter1" type="radio" value="0"/>
+              <span>A</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter1" type="radio" value="0"/>
+              <span>B</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter1" type="radio" value="0"/>
+              <span>C</span>
+            </label>
+          </td>
+          <td>
+            <input type="text" id="output1" readonly>
+          </td>
+        </tr>
+        <tr id="tr2">
+          <td>
+            <h4 class="number2">2</h4>
+            <button class="waves-effect waves-light btn orange" type="button" id="noWire2">No Wire</button>
+          </td>
+          <td>
+            <label>
+              <input class="radioNone with-gap" name="color2" type="radio" value="0" checked/>
+              <span>None</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color2" type="radio" value="0"/>
+              <span>Blue</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color2" type="radio" value="0"/>
+              <span>Black</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color2" type="radio" value="0"/>
+              <span>Red</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input class="radioNone with-gap" name="letter2" type="radio" value="0" checked/>
+              <span>None</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter2" type="radio" value="0"/>
+              <span>A</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter2" type="radio" value="0"/>
+              <span>B</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter2" type="radio" value="0"/>
+              <span>C</span>
+            </label>
+          </td>
+          <td>
+            <input type="text" id="output2" readonly>
+          </td>
+        </tr>
+        <tr id="tr3">
+          <td>
+            <h4 class="number3">3</h4>
+            <button class="waves-effect waves-light btn orange" type="button" id="noWire3">No Wire</button>
+          </td>
+          <td>
+            <label>
+              <input class="radioNone with-gap" name="color3" type="radio" value="0" checked/>
+              <span>None</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color3" type="radio" value="0"/>
+              <span>Blue</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color3" type="radio" value="0"/>
+              <span>Black</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="color3" type="radio" value="0"/>
+              <span>Red</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input class="radioNone with-gap" name="letter3" type="radio" value="0" checked/>
+              <span>None</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter3" type="radio" value="0"/>
+              <span>A</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter3" type="radio" value="0"/>
+              <span>B</span>
+            </label>
+            <br>
+            <label>
+              <input class="radioElse with-gap" name="letter3" type="radio" value="0"/>
+              <span>C</span>
+            </label>
+          </td>
+          <td>
+            <input type="text" id="output3" readonly>
+          </td>
+        </tr>
+      </table>
+
+      <br>
+      <button type="submit" class="waves-effect waves-light btn" id="submit">Next Stage</button>
+      <button type="button" class="waves-effect waves-light btn red" id="reset">Reset</button>
+    </div>
+</body>
+</html>

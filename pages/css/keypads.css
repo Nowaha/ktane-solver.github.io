@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+#icons {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#icons img {
+    width: 150px;
+    cursor: pointer;
+}
+
+#icons button {
+    height: 50px;
+    margin-top: 50px;
+}
+
+#icons img:not(.selected):hover {
+    border: 5px solid rgb(161, 255, 157);
+    background-color: #fff;
+}
+
+#icons img.selected:hover {
+    border: 5px solid rgb(255, 157, 157);
+    background-color: #fff;
+}
+
+#icons .selected {
+    border: 5px solid rgb(161, 255, 157);
+    background-color: rgb(224, 255, 223);
+}
+
+#result {
+    width: 100px;
+}
+
+#result img {
+    width: 100px;
+}
+
+#result td {
+    width: 0px !important;
+}
